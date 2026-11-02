@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KDX WORKSHOP // SYSTEM ACTIVE</title>
+    <style>
+        :root {
+            --bg-deep: #0a0a0a;
+            --panel-bg: #141414;
+            --border-color: #333333;
+            --text-main: #d4d4d4;
+            --text-bright: #ffffff;
+            
+            --kdx-green: #00ff55; 
+            --kdx-blue: #00bfff;  
+            --kdx-pink: #ff007f;  
+        }
+
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: var(--bg-deep);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            line-height: 1.5;
+            background-image: linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+                              linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+
+        header {
+            background-color: var(--panel-bg);
+            border-bottom: 2px dashed var(--kdx-green);
+            padding: 1.5rem;
+            text-align: left;
+            max-width: 900px;
+            margin: 2rem auto 1rem auto;
+            border-left: 6px solid var(--kdx-green);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+            letter-spacing: 3px;
+            color: var(--text-bright);
+            text-transform: uppercase;
+        }
+
+        header h1 span.k { color: var(--kdx-green); }
+        header h1 span.d { color: var(--kdx-blue); }
+        header h1 span.x { color: var(--kdx-pink); }
+        header h1 span.suffix { color: var(--text-bright); }
+
+        header p {
+            color: var(--text-main);
+            margin: 0.5rem 0 0 0;
+            font-size: 0.9rem;
+        }
+
+        nav {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: var(--panel-bg);
+            border: 1px solid var(--border-color);
+            padding: 0.5rem;
+            display: flex;
+            gap: 15px;
+        }
+
+        nav a {
+            color: var(--text-main);
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            padding: 0.3rem 0.6rem;
+            border: 1px solid transparent;
+        }
+
+        nav a:hover {
+            color: var(--kdx-green);
+            border-color: var(--kdx-green);
+            background-color: rgba(0, 255, 85, 0.05);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 1rem auto;
+            padding: 0;
+        }
+
+        .panel {
+            background-color: var(--panel-bg);
+            border: 1px solid var(--border-color);
+            border-left: 4px solid var(--kdx-blue);
+            padding: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .panel.pink-accent {
+            border-left-color: var(--kdx-pink);
+        }
+
+        .panel h2 {
+            margin-top: 0;
+            color: var(--text-bright);
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 0.4rem;
+        }
+
+        .panel h2 span {
+            color: var(--kdx-green);
+        }
+
+        footer {
+            max-width: 900px;
+            margin: 3rem auto 2rem auto;
+            text-align: center;
+            color: #666;
+            font-size: 0.8rem;
+            border-top: 1px solid var(--border-color);
+            padding-top: 1rem;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1><span class="k">K</span><span class="d">D</span><span class="x">X</span><span class="suffix">WORKSHOP.COM</span></h1>
+        <p>// ROOT_DIRECTORY: 3RD_YEAR_CYBER_SECURITY_STUDENT // PROJECT: 1992 E-SERIES KDX </p>
+    </header>
+
+    <nav>
+        <a href="index.html">[01] HOME</a>
+        <a href="kdx.html">[02] KDX_LOGS</a>
+        <a href="hobbies.html">[03] HOBBIES</a>
+        <a href="contact.html">[04] CONTACT</a>
+    </nav>
+
+    <div class="container">
+        <div class="panel">
+            <h2><span>SYS_INFO //</span> Welcome to the Garage</h2>
+            <p>Thanks for visiting! This is my little corner here where I leave updates about my current projects and such. I am currently working on my bachelors in Cyber Security, and would like to leave updates with that here as well, and any other real hobbies I have like 3D printing and just my typical electronic shenanigans. </p>
+        </div>
+
+        <div class="panel pink-accent">
+            <h2><span>ACTIVE_TASK //</span> E-Series KDX Rebuild</h2>
+            <p>Current status: All up and running, just regular maintenance and upkeep. I am working on getting the build sheet and such up to date here. Otherwise it is all on KDXRIDER.net.</p>
+        </div>
+		
+		<div class="picture-panel">
+            <h2><span>PROJECT_REF //</span> 1992 KDX200 in the Wild</h2>
+            <img src="kdx-trail.jpg" alt="1992 Kawasaki KDX E-series at Croom" style="width: 100%; height: auto; border: 1px solid var(--border-color); display: block; margin-top: 10px;">
+            <p style="font-size: 0.85rem; color: #888; margin-top: 8px;">// Reference of my 1992 E Series KDX.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>STATUS: ONLINE // KDXWORKSHOP.COM &copy; 2026</p>
+    </footer>
+
+</body>
+</html>
