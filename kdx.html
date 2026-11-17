@@ -4,142 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KDX WORKSHOP // SYSTEM ACTIVE</title>
-    <style>
-        :root {
-            --bg-deep: #0a0a0a;
-            --panel-bg: #141414;
-            --border-color: #333333;
-            --text-main: #d4d4d4;
-            --text-bright: #ffffff;
-            
-            --kdx-green: #00ff55; 
-            --kdx-blue: #00bfff;  
-            --kdx-pink: #ff007f;  
-        }
-
-        body {
-            font-family: 'Courier New', Courier, monospace;
-            background-color: var(--bg-deep);
-            color: var(--text-main);
-            margin: 0;
-            padding: 0;
-            line-height: 1.5;
-            background-image: linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
-                              linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
-            background-size: 20px 20px;
-        }
-
-        header {
-            background-color: var(--panel-bg);
-            border-bottom: 2px dashed var(--kdx-green);
-            padding: 1.5rem;
-            text-align: left;
-            max-width: 900px;
-            margin: 2rem auto 1rem auto;
-            border-left: 6px solid var(--kdx-green);
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 2rem;
-            letter-spacing: 3px;
-            color: var(--text-bright);
-            text-transform: uppercase;
-        }
-
-        header h1 span.k { color: var(--kdx-green); }
-        header h1 span.d { color: var(--kdx-blue); }
-        header h1 span.x { color: var(--kdx-pink); }
-        header h1 span.suffix { color: var(--text-bright); }
-
-        header p {
-            color: var(--text-main);
-            margin: 0.5rem 0 0 0;
-            font-size: 0.9rem;
-        }
-
-        nav {
-            max-width: 900px;
-            margin: 0 auto;
-            background-color: var(--panel-bg);
-            border: 1px solid var(--border-color);
-            padding: 0.5rem;
-            display: flex;
-            gap: 15px;
-        }
-
-        nav a {
-            color: var(--text-main);
-            text-decoration: none;
-            font-weight: bold;
-            text-transform: uppercase;
-            font-size: 0.85rem;
-            padding: 0.3rem 0.6rem;
-            border: 1px solid transparent;
-        }
-
-        nav a:hover {
-            color: var(--kdx-green);
-            border-color: var(--kdx-green);
-            background-color: rgba(0, 255, 85, 0.05);
-        }
-
-        .container {
-            max-width: 900px;
-            margin: 1rem auto;
-            padding: 0;
-        }
-
-        .panel {
-            background-color: var(--panel-bg);
-            border: 1px solid var(--border-color);
-            border-left: 4px solid var(--kdx-blue);
-            padding: 1.2rem;
-            margin-bottom: 1rem;
-        }
-
-        .panel.pink-accent {
-            border-left-color: var(--kdx-pink);
-        }
-
-        .panel h2 {
-            margin-top: 0;
-            color: var(--text-bright);
-            font-size: 1.2rem;
-            text-transform: uppercase;
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 0.4rem;
-        }
-
-        .panel h2 span {
-            color: var(--kdx-green);
-        }
-
-        footer {
-            max-width: 900px;
-            margin: 3rem auto 2rem auto;
-            text-align: center;
-            color: #666;
-            font-size: 0.8rem;
-            border-top: 1px solid var(--border-color);
-            padding-top: 1rem;
-            text-transform: uppercase;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-
+<body class="kdx">
+	
     <header>
         <h1><span class="k">K</span><span class="d">D</span><span class="x">X</span><span class="suffix">WORKSHOP.COM</span></h1>
         <p>// ROOT_DIRECTORY: 3RD_YEAR_CYBER_SECURITY_STUDENT // PROJECT: 1992 E-SERIES KDX </p>
     </header>
-
+	
+	<div>
     <nav>
         <a href="index.html">[01] HOME</a>
         <a href="kdx.html">[02] KDX_LOGS</a>
         <a href="hobbies.html">[03] HOBBIES</a>
         <a href="contact.html">[04] CONTACT</a>
-		
+	</div>
+	
+	<main>
+  
+  <section class="build-intro">
+    <h1>1992 Kawasaki KDX200 Build</h1>
+    <p>A 1992 KDX200 Restoration and Woods Build</p>
+    <img src="images/kdx-trail.jpg" alt="KDX200 on the trail">
+  </section>
+
+  <!-- My KDX's build sheet -->
+  <section class="build-sheet">
+    <h2>Build Sheet</h2>
+    
+    <h3>Engine & Exhaust</h3>
+    <ul>
+	  <li><strong>Electrical:</strong> High Output RickyStator Stator, with Tusk Dual Sport Lighting Kit </li>
+      <li><strong>Silencer:</strong> Pro Circuit Nature Friendly Silecner with a Spark Arrestor </li>
+	  <li><strong>Starter:</strong> OEM Kickstart with Panthera Motorsports Electric Starter </li>
+	  <li><strong>KIPS Valves:</strong> BDK Stainless Steel Valves </li>
+	  <li><strong>Carburetor:</strong> The New SmartCarb 34 </li>
+	  <li><strong>Pipe:</strong> Nickel Plated FMF Fatty </li>
+    </ul>
+
+    <h3>Suspension & Chassis</h3>
+    <ul>
+	  <li><strong>Bars:</strong> OEM Bars, planning to go to Pro Taper bars with a Pastrana Freestyle bend. </li>
+      <li><strong>Forks:</strong> Original Forks with Heavier Springs (OEM 'Heavier' Did not list rating)</li>
+      <li><strong>Shock:</strong> Stock Shock Valving & Stock Spring </li>
+	  <li><strong>Skidplate:</strong> Moose Skidplate </li>
+	  
+    </ul>
+  </section>
+
+  <!--  Build Log in reverse-chronological order -->
+  <section class="build-log">
+    <h2>Build Progress</h2>
+
+    <!-- follow this <article> block template for new posts -->
+    <article class="log-entry">
+      <h3>Fixing Wiring Mess <span class="date"> / September 2026</span></h3>
+      <p>I ended up redoing a good amount of the wiring as I was in a rush to do it all originally so it was not the prettiest. It still isn't the best, but it will do and is much better than before.
+	  I also had to find a new wheel as my old bearings, even though they had been replaced previously, ended up making the hub 'explode' so there is a 'new' wheel on there while I source a new hub for the old one.</p>
+      <figure>
+		<img src="images/wiringphoto.jpg" class="cropped-frame" alt="Crappy wiring photo">
+	    <figcaption> Crappy photo I know, hopefully I will take a better one soon.</figcaption>
+    </article>
+
+   <!-- <article class="log-entry">
+      <h3> <span class="date"> 2026</span></h3>
+      <p> </p>
+    </article> -->
+
+  </section>
+</main>
     <footer>
         <p>STATUS: ONLINE // KDXWORKSHOP.COM &copy; 2026</p>
     </footer>
