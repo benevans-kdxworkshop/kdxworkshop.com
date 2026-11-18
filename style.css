@@ -120,7 +120,7 @@
         }
 		
 		main {
-			max-width: 800px;
+			max-width: 1000px;
 			margin: 0 auto;
 			padding: 20px;
 			text-align: center;   
@@ -174,11 +174,38 @@
 		}
 		
 		body.kdx {
-			header h1 {
+            --bg-deep: #0a0a0a;
+            --panel-bg: #141414;
+            --border-color: #333333;
+            --text-main: #d4d4d4;
+            --text-bright: #ffffff;
+            
+            --kdx-green: #00ff55; 
+            --kdx-blue: #00bfff;  
+            --kdx-pink: #ff007f;  
+		}
+		
+		body.kdx h1 {
             margin: 0;
             font-size: 2rem;
             letter-spacing: 3px;
-            color: #00ff55;
+            color: var(--kdx-green);
             text-transform: uppercase;
 		}
 		
+		body.kdx h2 {
+            color: var(--kdx-blue);
+            font-size: 1.8rem;
+            text-transform: uppercase;
+        }
+		
+		body.kdx h3 { 
+			color: var(--kdx-pink);
+			font-size: 1.5rem;
+			text-decoration: underline;
+		}
+		
+		body.kdx main {
+			font-size: 1.1rem;
+			color: var(--text-bright);
+		}
