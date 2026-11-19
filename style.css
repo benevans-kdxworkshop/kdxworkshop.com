@@ -195,8 +195,9 @@
 		
 		body.kdx h2 {
             color: var(--kdx-blue);
-            font-size: 1.8rem;
+            font-size: 2rem;
             text-transform: uppercase;
+			text-decoration: underline;
         }
 		
 		body.kdx h3 { 
